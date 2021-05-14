@@ -52,24 +52,27 @@ class Voltaire3000():
             arguments : NO ARGUMENT
             return :    NO RETURN
         """
-        for i in range(4,100):
+        for i in range(0,100):
             try:
                 niveau = self.browser.find_element_by_xpath("/html/body/div[5]/div[3]/div[3]/div/div[2]/div["+ str(i) +"]/div/div[2]/div[3]/button[1]")
                 niveau.click()
-                print("AAAAAAA",i)
                 break
             except:
                 try:
                     niveau = self.browser.find_element_by_xpath("/html/body/div[5]/div[3]/div[3]/div[1]/div[2]/div[13]/div/div[2]/div[2]/button")
                     niveau.click()
-                    print("BBBBB")
                     break
                 except:
                     pass
                 try:
                     niveau = self.browser.find_element_by_xpath("/html/body/div[5]/div[3]/div[3]/div/div[2]/div[11]/div/div[2]/div[2]/button")
                     niveau.click()
-                    print("CCCCCCCC")
+                    break
+                except:
+                    pass
+                try:
+                    niveau = self.browser.find_element_by_xpath("add_xpath_here")
+                    niveau.click()
                     break
                 except:
                     pass
