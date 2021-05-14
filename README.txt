@@ -38,6 +38,16 @@ Etape 1: Entrer vos identifiants de connexions au projet voltaire entre les flè
 	
 Etape 2: Lancer le programe python
 
+	# Current Issue/Problème récurrent #
+[en] if the program doesn't click on the level it may be that the xpath of the button is not in the programm to resolve this issue you can go in the level
+selection of Projet Voltaire, right click on the level button, click on inspect. You see the html code of the button, click right on it and in copy, select copy
+full xpath. Then go in the program in the "niveau" method and replace the "add_xpath_here" by your xpath. If you need to add an other one, just copy the code
+structure and do the same.
+[fr] si le programme ne clique pas sur le niveau, c'est surement que le xpath du bouton correspondant n'est pas dans le programme, pour résoudre ce problème, il 
+faut aller sur la selection de niveau de projet voltaire (normalement, pas via la programme), faite un clique droit sur le bouton du niveau, puis sur "inspecter"
+ensuite cliquer droit sur le code html du bouton et dans "copy", selectionner full xpath puis dans le code remplacer dans la méthode niveau le "add_xpath_here"
+par votre xpath. S'il faut encore en ajouter un, vous pouvez juste copier la structure du code au dessus et refaire la même chose.
+
 	# Issues/Problèmes #
 [en] if you meet any issue, do not hesitate to contact me at pierrefrancoisdf@gmail.com or post an issue on the github
 [fr] si vous rencontrez un problème, n'hésiter pas à me contacter à pierrefrancoisdf@gmail.com ou a poster une issue sur ce github
@@ -48,6 +58,7 @@ This program is under MIT License, you can freely use it, improve it
 
 [fr]
 Ce programme est sous licence MIT, utilisable et transformable librement
+
 
 
 
